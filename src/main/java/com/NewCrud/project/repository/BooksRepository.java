@@ -1,7 +1,11 @@
 package com.NewCrud.project.repository;
 
 import com.NewCrud.project.model.Books;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
 
-public interface BooksRepository extends CrudRepository<Books, Integer> {
+@Repository
+public interface BooksRepository extends MongoRepository<Books, Integer>{
+
+
 }

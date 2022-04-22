@@ -28,7 +28,7 @@ public class BooksController {
         booksService.delete(bookid);
     }
 
-    @PutMapping("/books")
+    @PostMapping("/books")
     private int saveBook(@RequestBody Books books){
         booksService.saveOrUpdate(books);
         return books.getBookId();
