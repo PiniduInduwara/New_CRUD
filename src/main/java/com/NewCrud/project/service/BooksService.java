@@ -21,6 +21,7 @@ public class BooksService {
     }
 
     public Books getBooksById(int id){
+
         return booksRepository.findById(id).get();
     }
 
@@ -29,6 +30,7 @@ public class BooksService {
     }
 
     public void delete(int id){
+
         booksRepository.deleteById(id);
     }
 
